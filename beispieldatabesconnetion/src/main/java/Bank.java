@@ -7,6 +7,7 @@ public class Bank {
     @Id
     @Column(name="id")
     @GeneratedValue(generator = "incremmentor")
+    @GenericGenerator(name ="incremmentor", strategy = "increment")
     private  int id;
 
     public int getId() {
